@@ -51,14 +51,3 @@ body {
 	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-/*.hour-hand {
-  width: 6px;
-}
-
-.min-hand {
-  width: 3px;
-}*/
-
-.hand.second-hand {
-  width: 2px;
-}
