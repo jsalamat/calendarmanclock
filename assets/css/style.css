@@ -43,7 +43,9 @@ body {
 	background: black;
 	position: absolute;
 	top: 50%;
-	transform-origin: 100%;
+	transform-origin: 100%; 
+	/* its where the origin transform the rotation and default is 50.
+	 by making it 100 it rotates at the x axis and put pivot point at right side*/
 	transform: rotate(90deg);
 	transition: all 0.05s;
 	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
