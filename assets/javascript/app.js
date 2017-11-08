@@ -16,13 +16,13 @@ const setDate = () => {
 
 	const minutes = now.getMinutes();
 	// console.log(minutes);
-	const minDegrees = ((minutes / 60) * 360) + 90;
+	const minDegrees = ((minutes / 60) * 360) + ((seconds/60)*6) + 90;
 	// console.log(minDegrees);
 	minHand.style.transform = `rotate(${minDegrees}deg)`;
 
 	const hours = now.getHours();
 	// console.log(hours);
-	const hourDegrees = ((hours / 60) * 360) + 90;
+	const hourDegrees = ((hours / 12) * 360) + ((minutes/60)*30) + 90;
 	// console.log(hourDegrees);
 	hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
